@@ -1,0 +1,110 @@
+Git 
+
+- version control system is a tools that help to track changes in code
+- Git is a version control system
+- Git is open source
+- fast & scalable
+
+- it is used to track the history of code
+- it is used to collaborate
+
+GitHub
+
+- it is website that allows developers to store and manage their code using git
+- folder(repository)
+- we can see others folder from GitHub
+
+Commit - changes
+
+ # ---------------------------------------------------------------------------- #
+git config --global user.name "My Name"
+
+git config --global user.email "patilsainath465@gmail.com"
+
+git config --list
+# ---------------------------------------------------------------------------- #
+
+# ------------------------------- GIT COMMANDS ------------------------------- #
+
+1. Clone -> cloning a repo on our local machine
+    # ---------------------------------------------------------------------------- #
+    #                           git clone <-some link ->                           #
+    # ---------------------------------------------------------------------------- #
+
+2. Status -> display the status of the code
+    # ---------------------------------------------------------------------------- #
+    #                                  git status                                  #
+    # ---------------------------------------------------------------------------- #
+
+3. cd -> change dir
+
+4. ls -> List files
+
+5. ls -a -> hidden files (if it show .git file then that file is github file)
+
+6. After modifiying the file we have do two step verification
+    Status :
+            1. untracked  -> new files that git doesn't yet track
+            2. modified   -> changed
+            3. staged     -> file is ready to be committed
+            4. unmodified -> unchanged
+
+    add    : adds new or changed files in your working directory to the git staging area
+            # ---------------------------------------------------------------------------- #
+            #    git add <-file name ->     or git add . (this will add all the files)     #
+            # ---------------------------------------------------------------------------- #
+    
+    commit : it is the record of change
+            # ---------------------------------------------------------------------------- #
+            #                         git commit -m "some message"                         #
+            # ---------------------------------------------------------------------------- #
+
+    push   : upload local repo content to remote repo
+            # ---------------------------------------------------------------------------- #
+            #           git push origin main  (main is a branch name)                      #
+            # ---------------------------------------------------------------------------- #
+
+7. Init Command : it is used to create a new git repo
+
+          1. git init 
+                - this will create new git in local
+          2. git remote add origin <- link ->  
+                - this is used to add to the remote repo (push and commit will happen to this repo link)
+          3. git remote -v
+                - to verify remote
+          4. git branch
+                - to check branch
+          5. git branch -M main
+                - to rename branch
+          6. git push origin main
+
+# ---------------------------------------------------------------------------- #
+#           GitHub repo -> clone -> changes -> add -> commit -> push           #
+# ---------------------------------------------------------------------------- #
+
+8. branch Command (if we change the file data in one branch that change will see only in that branch not in other branch)
+
+    1. git checkout <- branch name ->
+        - to navigate
+    2. git checkout -b <- new branch name ->
+        - to create branch name
+    3. git branch -d <- branch name ->
+        - to delete branch
+
+9. Merging code
+
+    WAY 1 : 
+            git diff <- branch name ->
+             - to Compare commits, branch, file and more
+
+            git merge <- branch name ->
+             - to merge two branch
+    
+    WAY 2 :
+
+10. Pull Command -> used to fetch and download content from a remote repo and immnediately update the local repo to match that content 
+ 
+        # ---------------------------------------------------------------------------- #
+        #                             git pull origin main                             #
+        # ---------------------------------------------------------------------------- #
+        
